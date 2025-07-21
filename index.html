@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disney Templates - SlidesGo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏰</text></svg>">
+    <meta name="description" content="Create amazing presentations with Disney-themed templates. Perfect for educators, students, and Disney fans.">
+    <meta property="og:title" content="Disney Templates - SlidesGo">
+    <meta property="og:description" content="A world of joy for your templates with Disney and Pixar characters">
+    <meta property="og:type" content="website">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-left">
+                    <div class="logo">
+                        <div class="logo-icon">S</div>
+                        <span class="logo-text">SLIDESGO</span>
+                    </div>
+                    <nav class="nav-desktop">
+                        <a href="#" class="nav-link active">All Slides</a>
+                        <a href="#" class="nav-link">Templates</a>
+                        <a href="#" class="nav-link">Educational tools</a>
+                        <a href="#" class="nav-link">Learn</a>
+                    </nav>
+                </div>
+                <div class="header-right">
+                    <div class="search-container">
+                        <input type="text" placeholder="Search" class="search-input" id="searchInput">
+                        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </div>
+                    <button class="btn-more">
+                        More
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <polyline points="6,9 12,15 18,9"></polyline>
+                        </svg>
+                    </button>
+                    <button class="btn-primary">Start & Create</button>
+                    <div class="user-avatar"></div>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <nav class="mobile-nav">
+                    <a href="#" class="mobile-nav-link">All Slides</a>
+                    <a href="#" class="mobile-nav-link">Templates</a>
+                    <a href="#" class="mobile-nav-link">Educational tools</a>
+                    <a href="#" class="mobile-nav-link">Learn</a>
+                </nav>
+                <div class="mobile-actions">
+                    <button class="btn-primary mobile-btn">Start & Create</button>
+                    <input type="text" placeholder="Search templates..." class="mobile-search">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-characters">
+            <div class="character-circle character-1">🐠</div>
+            <div class="character-circle character-2">🦆</div>
+            <div class="character-circle character-3">🐭</div>
+            <div class="character-circle character-4">🦆</div>
+        </div>
+        <div class="hero-content">
+            <div class="disney-logo">Disney</div>
+            <h1 class="hero-title">A world of joy for your templates</h1>
+            <p class="hero-description">
+                Choose from designs with your favorite Disney and Pixar characters and bring happiness to your
+                presentations. Browse through Disney templates and slides to find the perfect one for your audience.
+            </p>
+        </div>
+    </section>
+
+    <!-- Related Collections -->
+    <section class="collections">
+        <div class="container">
+            <h2 class="section-title">Related collections</h2>
+            <div class="collections-grid">
+                <div class="collection-card business-disney">
+                    <div class="collection-content">
+                        <div class="collection-icon">💼</div>
+                        <div class="collection-title">Business Disney</div>
+                    </div>
+                    <div class="collection-decoration decoration-1"></div>
+                    <div class="collection-decoration decoration-2"></div>
+                </div>
+                <div class="collection-card basic-disney">
+                    <div class="collection-content">
+                        <div class="collection-icon">🏰</div>
+                        <div class="collection-title">Basic Old Disney</div>
+                    </div>
+                    <div class="collection-decoration decoration-3"></div>
+                    <div class="collection-decoration decoration-4"></div>
+                </div>
+                <div class="collection-card minnie-disney">
+                    <div class="collection-content">
+                        <div class="collection-icon">🎀</div>
+                        <div class="collection-title">Minnie & Disney</div>
+                    </div>
+                    <div class="collection-decoration decoration-5"></div>
+                    <div class="collection-decoration decoration-6"></div>
+                </div>
+                <div class="collection-card frozen-disney">
+                    <div class="collection-content">
+                        <div class="collection-icon">❄️</div>
+                        <div class="collection-title">Frozen Disney</div>
+                    </div>
+                    <div class="collection-decoration decoration-7"></div>
+                    <div class="collection-decoration decoration-8"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Templates Grid -->
+    <section class="templates">
+        <div class="container">
+            <div class="templates-grid" id="templatesGrid">
+                <!-- Templates will be dynamically loaded here -->
+            </div>
+            <div class="load-more-container">
+                <button class="btn-load-more" id="loadMoreBtn">Load more</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently asked</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        I don't see the download button. How can I get the templates?
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <polyline points="6,9 12,15 18,9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>To download templates, you need to create a free account or sign in to your existing account. Once logged in, you'll see the download button on each template page.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What formats can I download the Disney designs in?
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <polyline points="6,9 12,15 18,9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Disney templates are available in PowerPoint (.pptx) and Google Slides formats. Some templates may also include PDF versions for printing.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Why can I only edit the templates in Slidesgo's Editor?
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <polyline points="6,9 12,15 18,9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Some premium templates require our online editor for licensing reasons. However, most templates can be downloaded and edited in PowerPoint or Google Slides.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What licenses are the Disney designs covered by?
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <polyline points="6,9 12,15 18,9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Disney templates are licensed for educational and personal use. Commercial use requires a premium subscription. Please check our licensing terms for detailed information.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Can I use Disney templates for commercial use or at school? Can I print them?
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <polyline points="6,9 12,15 18,9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, you can use Disney templates at school and print them for educational purposes. For commercial use, you'll need a premium subscription.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-icon">S</div>
+                        <span class="logo-text">SLIDESGO</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link youtube">YT</a>
+                        <a href="#" class="social-link instagram">IG</a>
+                        <a href="#" class="social-link facebook">FB</a>
+                        <a href="#" class="social-link twitter">TW</a>
+                    </div>
+                    <p class="footer-description">
+                        Create amazing presentations with our Disney-themed templates. Perfect for educators, students, and Disney fans.
+                    </p>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">COMPANY</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">New releases</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press kit</a></li>
+                        <li><a href="#">API</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">RESOURCES</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">PowerPoint templates</a></li>
+                        <li><a href="#">Google Slides themes</a></li>
+                        <li><a href="#">Infographics</a></li>
+                        <li><a href="#">Worksheets</a></li>
+                        <li><a href="#">Planners</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">LEARN</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Presentation tips</a></li>
+                        <li><a href="#">Design tutorials</a></li>
+                        <li><a href="#">Google Slides guide</a></li>
+                        <li><a href="#">PowerPoint guide</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">SUPPORT</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Report content</a></li>
+                        <li><a href="#">System status</a></li>
+                        <li><a href="#">Feedback</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Newsletter -->
+            <div class="newsletter">
+                <div class="newsletter-content">
+                    <h3 class="newsletter-title">Stay updated</h3>
+                    <p class="newsletter-description">Get the latest Disney templates and design tips delivered to your inbox.</p>
+                </div>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" class="newsletter-input" id="newsletterEmail">
+                    <button class="btn-subscribe" id="subscribeBtn">Subscribe</button>
+                </div>
+            </div>
+            
+            <!-- Bottom Footer -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <p class="copyright">Copyright © 2024 Slidesgo Company S.L. All rights reserved.</p>
+                    <div class="legal-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+                <div class="footer-bottom-right">
+                    <select class="language-selector" id="languageSelector">
+                        <option value="en">🇺🇸 English</option>
+                        <option value="es">🇪🇸 Español</option>
+                        <option value="fr">🇫🇷 Français</option>
+                        <option value="de">🇩🇪 Deutsch</option>
+                        <option value="it">🇮🇹 Italiano</option>
+                    </select>
+                    <button class="btn-suggest">Suggest ideas</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
